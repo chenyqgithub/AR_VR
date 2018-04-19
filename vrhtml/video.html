@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- include A-Frame obviously -->
+    <script src="/static/js/aframe.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <!--<script src="/static/js/aframe-ar.js"></script>-->
+    <!-- include A-Frame-Extras -->
+    <!--<script src="/static/js/aframe-extras.min.js"></script>-->
+    <!--<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>-->
+</head>
+<body >
+<!--<a-scene>-->
+    <!--<a-assets>-->
+        <!--&lt;!&ndash;<img id="sky" src="39673120200_ee07ed752a_o.jpg">&ndash;&gt;-->
+        <!--<img id="sky" src="29003316674_69fc7cd71a_o.jpg">-->
+    <!--</a-assets>-->
+    <!--<a-sky src="#sky">-->
+        <!--<a-entity obj-model="obj: url(../obj/row/CartoonRocket.obj); mtl: url(../obj/row/CartoonRocket.mtl)"-->
+                  <!--scale="0.2 0.2 0.2"-->
+                  <!--position = "1 0 3"-->
+                  <!--shadow = "receive:false"-->
+        <!--&gt;-->
+            <!--<a-entity position="0 0 0"></a-entity>-->
+            <!--<a-animation attribute="rotation"-->
+                         <!--dur="50000"-->
+                         <!--fill="forwards"-->
+                         <!--to="0 960 0"-->
+                         <!--repeat="indefinite"></a-animation>-->
+        <!--</a-entity>-->
+    <!--</a-sky>-->
+<!--</a-scene>-->
+<!--<a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>-->
+<!--<a-gltf-model src="tree.gltf" shadow="receive: false"></a-gltf-model>-->
+<!--<a-scene>-->
+    <!--<a-assets >-->
+        <!--<video id="penguin-sledding" class="aaa" src="ar2.mp4"    controls="controls"  playsinline webkit-playsinline loop muted autoplay></video>-->
+    <!--</a-assets>-->
+
+    <!--&lt;!&ndash; Using the asset management system. &ndash;&gt;-->
+    <!--<a-video src="#penguin-sledding"  width="16" height="9" position="0 0 -20" ></a-video>-->
+
+    <!--&lt;!&ndash; Defining the URL inline. Not recommended but more comfortable for web developers. &ndash;&gt;-->
+    <!--&lt;!&ndash;<a-video src="airbending.mp4"></a-video>&ndash;&gt;-->
+<!--</a-scene>-->
+
+<a-scene>
+    <a-assets>
+        <video id="antarctica"  src="sky2.mp4" controls="controls"  playsinline webkit-playsinline loop muted autoplay></video>
+    </a-assets>
+
+    <!-- Using the asset management system. -->
+    <a-videosphere src="#antarctica"></a-videosphere>
+
+    <!--<a-assets >-->
+        <!--<video id="penguin-sledding" class="aaa" src="ar2.mp4"    controls="controls"  playsinline webkit-playsinline loop muted autoplay></video>-->
+    <!--</a-assets>-->
+
+    <!-- Using the asset management system. -->
+    <!--<a-video src="#penguin-sledding"  width="16" height="9" position="0 5 -10" ></a-video>-->
+</a-scene>
+
+
+</body>
+<script>
+//    window.onload = function () {
+//        var aaa = document.getElementsByClassName("aaa")[0];
+//        aaa.play();
+//    }
+
+</script>
+</html>
