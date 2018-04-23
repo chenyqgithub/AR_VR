@@ -1,5 +1,3 @@
-# ns2250225.github.io
-AR游戏王项目
 
 # 执行步骤
 - 用Android Chrome打开: https://www.ropy.site
