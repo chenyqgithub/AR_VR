@@ -22,4 +22,16 @@
     <a-entity camera></a-entity>
 </a-scene>
 </body>
+    <script>
+     AFRAME.registerComponent('属性', {
+        dependencies: ['material'],
+
+        init: function () {
+
+            this.el.addEventListener('click', function (evt) {
+                alert(0)
+            });
+        }
+    });
+    </script>
 </html>
